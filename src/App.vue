@@ -1,7 +1,8 @@
 <template>
   <div>
-    <nav>
+    
      <div class="container">
+     <nav>
       <ul class="nav__left">
  
        <li><router-link to="/">Home</router-link></li>
@@ -9,8 +10,9 @@
        <li><router-link to='/cart'>Cart</router-link></li>
 
       </ul>
+      </nav>
      </div>
-    </nav>
+    
     <router-view/>
   </div>
 </template>
@@ -30,4 +32,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+nav {
+  display: block;
+  }
 </style>
